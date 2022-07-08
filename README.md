@@ -1,1 +1,1 @@
-# feadback-app
+# feedback-app
