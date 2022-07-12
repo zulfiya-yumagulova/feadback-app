@@ -7,6 +7,7 @@ function FeedbackList({ feedbacks }) {
     return <p>No Feedback Posted Yet...</p>;
   }
   return (
+    // Map an array to create card components
     <div className="feedback-list">
       {feedbacks.map((feedback) => (
         <FeedbackItem key={feedback.id} feedback={feedback} />
