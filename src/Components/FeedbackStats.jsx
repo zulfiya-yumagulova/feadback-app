@@ -2,11 +2,12 @@ import React from "react";
 
 export default function feedbackStats({ feedbacks }) {
   // Calcute Ratings average
-  let average = Math.floor(
+  let average =
     feedbacks.reduce((acc, cur) => {
       return acc + cur.rating;
-    }, 0) / feedbacks.length
-  );
+    }, 0) / feedbacks.length;
+
+  average = average.toFixed(1).replace(/[.,]0$/, "");
 
   console.log(average);
 
